@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Joke List</h1>
+
+{% for chucknorriss in chucknorris %}
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{ chucknorriss.name }}</span>
+      
+    </div>
+  </div>
+{% endfor %}
+
+{% endblock %}
